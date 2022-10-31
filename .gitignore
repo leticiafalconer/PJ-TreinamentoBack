@@ -1,0 +1,13 @@
+node_modules
+package-lock.json
+*.log
+*.gz
+
+.idea/
+.vscode/
+.env
+
+dist/
+
+tmp/uploads/*
+!tmp/uploads/.gitkeep
