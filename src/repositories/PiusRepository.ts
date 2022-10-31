@@ -1,5 +1,4 @@
 import Piu from "../models/Piu";
-import UsersRepository from "./UsersRepository";
 
 class PiusRepository {
     private pius: Piu[];
@@ -43,8 +42,8 @@ class PiusRepository {
 
     public delete(id: string) {
         const index = this.findIndex(id);
-        this.pius.splice(index);
-        return;
+        
+        return this.pius.splice(index, 1);
     }
 
 }

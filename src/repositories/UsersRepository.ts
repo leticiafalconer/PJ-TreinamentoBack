@@ -45,8 +45,8 @@ class UsersRepository {
 
     public delete(id: string) {
         const index = this.findIndex(id);
-        this.users.splice(index);
-        return;
+
+        return this.users.splice(index, 1);
     }
 }
 
